@@ -8,6 +8,8 @@ class SpringThyemleafApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//Test
+		System.out.println("Test");
 	}
 
 }

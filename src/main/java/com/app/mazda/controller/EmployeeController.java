@@ -22,6 +22,7 @@ public class EmployeeController {
 
     @GetMapping("/list")
     public String listEmployees(Model model) {
+        //logger are used to log the information about the employees
         return findPaginated(1, model);
     }
 
@@ -48,7 +49,7 @@ public class EmployeeController {
     }
     @GetMapping("/deleteEmployee/{id}")
     public String deleteEmployee(@PathVariable (value="id") long id) {
-        // call delete employee method
+        // call delete employee method from the service
         employeeService.deleteEmployeeById(id);
         return "redirect:/employee/list";
     }
