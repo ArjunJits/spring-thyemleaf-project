@@ -27,6 +27,7 @@ public class EmployeeController {
 
     @GetMapping("/showNewEmployeeForm")
     public String showNewEmployeeForm(Model model) {
+        //Model is used to pass the data from controller to view
         model.addAttribute("employee", new Employee());
         return "new_employee";
     }
