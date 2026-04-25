@@ -10,8 +10,11 @@ public interface EmployeeService {
 
     void saveEmployee(Employee employee);
 
+    //add this changes
+
     public Employee getEmployeeById(long id);
 
     void deleteEmployeeById(long id);
-    Page < Employee > findPaginated(int pageNo, int pageSize);
+
+    Page<Employee> findPaginated(int pageNo, int pageSize);
 }
